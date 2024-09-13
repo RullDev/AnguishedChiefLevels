@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: 'Manrope', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+}
+
+/* Navbar */
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.navbar-dark .navbar-brand {
+    color: #58a6ff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #c9d1d9;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #58a6ff;
+}
+
+/* Home Section */
+.home-container {
+    padding: 100px 0;
+    background: #161b22;
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.home-container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.home-container p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.menfess-card {
+    width: 300px;
+    background: #21262d;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.menfess-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.menfess-card img {
+    max-height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.menfess-card .card-body {
+    padding: 20px;
+}
+
+.menfess-card .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.menfess-card .card-text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Navbar.Brand Styling */
+.navbar-brand {
+    font-family: 'Manrope', sans-serif; /* Gaya font */
+    font-weight: bold; /* Font tebal */
+    font-size: 1.4rem; /* Ukuran font lebih besar */
+    color: #58a6ff; /* Warna font */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Efek bayangan teks */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #f0f0f0; /* Warna font saat hover */
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
+
+
+/* Button */
+.btn-get-started {
+    background-color: #58a6ff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-get-started:hover {
+    background-color: #1f6feb;
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about-section {
+    padding: 80px 0;
+    background: #161b22;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.about-section p {
+    font-size: 1.25rem;
+    margin: 0 auto;
+    max-width: 800px;
+    animation: fadeInText 1.5s ease-out;
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Mini Card */
+.mini-card {
+    background: #21262d;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px;
+    color: white;
+    margin: 10px;
+    display: inline-block;
+    width: calc(33% - 20px);
+}
+
+.mini-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+.mini-card .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.mini-card .card-text {
+    font-size: 1rem;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 80px 0;
+    background: #161b22;
+    text-align: center;
+}
+
+.faq-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-out;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: #21262d;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: background 0.3s ease;
+    color: white;
+}
+
+.faq-item:hover {
+    background: #2d333b;
+}
+
+.faq-question {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.faq-answer {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Feature Page */
+.feature-section {
+    padding: 80px 0;
+    background: #161b22;
+    text-align: center;
+}
+
+.feature-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-out;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature-card {
+    background: #21262d;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    padding: 20px;
+    color: white;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.feature-card .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.feature-card .card-text {
+    font-size: 1rem;
+}
+
+.feature-card .card-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #58a6ff;
+}
+
+/* Footer */
+.footer {
+    padding: 20px 0;
+    background: #0d1117;
+    text-align: center;
+}
+
+.footer p {
+    color: #8b949e;
+    font-size: 0.875rem;
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 992px) {
+    .home-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-container p {
+        font-size: 1rem;
+    }
+
+    .menfess-card {
+        width: 90%;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .mini-card {
+        width: calc(50% - 20px);
+    }
+
+    .faq-item {
+        font-size: 0.875rem;
+    }
+
+    .feature-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar .navbar-nav .nav-link {
+        padding: 10px;
+        font-size: 0.875rem;
+    }
+
+    .home-container h1 {
+        font-size: 2rem;
+    }
+
+    .home-container p {
+        font-size: 0.875rem;
+    }
+
+    .menfess-card {
+        width: 100%;
+    }
+
+    .faq-item {
+        font-size: 0.875rem;
+    }
+
+    .mini-card {
+        width: 94%;
+    }
+}
