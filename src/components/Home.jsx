@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Container, Card } from 'react-bootstrap';
-import logo from '../../public/bg.jpg';
+import logo from '././public/bg.jpg';
 
 
 const Home = () => {
