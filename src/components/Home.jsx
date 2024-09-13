@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Container, Card } from 'react-bootstrap';
-
+import logo from '../../public/bg.jpg';
 
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
                 <p>Automate your Menfess interaction easily with our bot!</p>
                 <div className="card-container">
                     <Card className="menfess-card">
-                        <Card.Img variant="top" src='https://pomf2.lain.la/f/t1xe21dm.jpg' alt="Menfess Logo" />
+                        <Card.Img variant="top" src={logo} alt="Menfess Logo" />
                         <Card.Body>
                             <Card.Title>Izumii BOT</Card.Title>
                             <Card.Text>
