@@ -11,7 +11,7 @@ const Home = () => {
                 <p>Automate your Menfess interaction easily with our bot!</p>
                 <div className="card-container">
                     <Card className="menfess-card">
-                        <Card.Img variant="top" src='../../public/bg.jpg' alt="Menfess Logo" />
+                        <Card.Img variant="top" src='././public/bg.jpg' alt="Menfess Logo" />
                         <Card.Body>
                             <Card.Title>Izumii BOT</Card.Title>
                             <Card.Text>
